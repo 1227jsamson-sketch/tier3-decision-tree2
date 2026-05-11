@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tier 3 Strategic Exception Decision Tree</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              50: '#fdf2f2',
+              100: '#fde8e8',
+              300: '#f2b3b3',
+              600: '#660b0a',
+              700: '#540908'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(102, 11, 10, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-50 text-slate-800 font-sans">
+  <div class="max-w-6xl mx-auto p-6">
+    <!-- Header -->
+    <header class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <p class="text-sm font-semibold tracking-widest uppercase text-brand-600">Great Wolf Lodge</p>
+      <h1 class="text-4xl font-extrabold text-slate-900 mt-2">Tier 3 Strategic Exception Decision Tree</h1>
+      <p class="mt-4 text-lg text-slate-600">
+        Quick reference cheat sheet to determine whether a concern qualifies for Tier 3 Strategic Exception handling and the typical resolution type.
+      </p>
+    </header>
+
+    <!-- Step 1 -->
+    <section class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-2xl font-bold">1</div>
+        <div>
+          <h2 class="text-2xl font-bold">Can You Resolve the Concern Using Standard Policy?</h2>
+          <p class="text-slate-600">Start by determining whether the issue can be resolved with your normal authority and existing procedures.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border-2 border-brand-300 bg-emerald-50 p-6">
+          <h3 class="text-xl font-bold text-emerald-700">✅ Yes</h3>
+          <p class="mt-2"><strong>Tier 3?</strong> No</p>
+          <p><strong>Resolution:</strong> Follow standard policy and procedures.</p>
+        </div>
+        <div class="rounded-2xl border-2 border-brand-300 bg-amber-50 p-6">
+          <h3 class="text-xl font-bold text-brand-600">❌ No</h3>
+          <p class="mt-2"><strong>Tier 3?</strong> Yes — Continue to Step 2.</p>
+          <p><strong>Resolution:</strong> Requires strategic exception review.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2 -->
+    <section class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-2xl font-bold">2</div>
+        <div>
+          <h2 class="text-2xl font-bold">Identify the Exception Category</h2>
+          <p class="text-slate-600">Match the guest concern to the appropriate Tier 3 category.</p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+          <h3 class="text-xl font-bold">⚖️ Legal Exposure</h3>
+          <p class="mt-2 text-sm text-slate-600">Injury, ADA, discrimination, legal threats</p>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Guest reports an injury during the stay</li>
+            <li>Guest alleges discrimination</li>
+            <li>Guest requests an incident report</li>
+            <li>"If this isn't resolved, I will contact a lawyer."</li>
+          </ul>
+          <p class="mt-4"><strong>Tier 3?</strong> Yes</p>
+          <p><strong>Typical Resolution:</strong> Refund or Credit</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+          <h3 class="text-xl font-bold">💳 System Failure</h3>
+          <p class="mt-2 text-sm text-slate-600">Double charge, booking error</p>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Duplicate charge</li>
+            <li>Booking system error</li>
+            <li>Website malfunction</li>
+            <li>Incorrect reservation details caused by the system</li>
+          </ul>
+          <p class="mt-4"><strong>Tier 3?</strong> Yes</p>
+          <p><strong>Typical Resolution:</strong> Refund Required</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+          <h3 class="text-xl font-bold">📱 Reputational Risk</h3>
+          <p class="mt-2 text-sm text-slate-600">Social or influencer threat</p>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Guest threatens to post on social media</li>
+            <li>Guest references influencer status</li>
+            <li>Guest says they will leave negative reviews</li>
+          </ul>
+          <p class="mt-4"><strong>Tier 3?</strong> Yes</p>
+          <p><strong>Typical Resolution:</strong> Refund or Credit</p>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 p-6 bg-slate-50">
+          <h3 class="text-xl font-bold">⚠️ Policy Breakdown</h3>
+          <p class="mt-2 text-sm text-slate-600">Agent error, wrong information given</p>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Another representative provided incorrect information</li>
+            <li>Agent promised a resolution not supported by policy</li>
+            <li>Operational or policy error created the issue</li>
+          </ul>
+          <p class="mt-4"><strong>Tier 3?</strong> Yes</p>
+          <p><strong>Typical Resolution:</strong> Refund or Credit</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3 -->
+    <section class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-2xl font-bold">3</div>
+        <div>
+          <h2 class="text-2xl font-bold">Review Guest Case History</h2>
+          <p class="text-slate-600">Strategic exceptions require a review of previous guest contacts and unresolved concerns.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Has the guest contacted via voice, chat, or web multiple times?</div>
+        <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">Has the concern remained unresolved?</div>
+        <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">What is the guest's loyalty status and lifetime value?</div>
+        <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">When was the last exception granted?</div>
+      </div>
+    </section>
+
+    <!-- Quick Decision Table -->
+    <section class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <h2 class="text-2xl font-bold mb-6">Quick Decision Table</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-slate-200 rounded-2xl overflow-hidden">
+          <thead class="bg-brand-600 text-white">
+            <tr>
+              <th class="text-left px-4 py-3">Actual Scenario</th>
+              <th class="text-left px-4 py-3">Tier 3?</th>
+              <th class="text-left px-4 py-3">Typical Resolution</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 bg-white">
+            <tr>
+              <td class="px-4 py-3">Injury, ADA, discrimination, legal threat</td>
+              <td class="px-4 py-3 font-semibold text-emerald-600">Yes</td>
+              <td class="px-4 py-3">Refund or Credit</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Duplicate charge or booking error</td>
+              <td class="px-4 py-3 font-semibold text-emerald-600">Yes</td>
+              <td class="px-4 py-3">Refund Required</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Social media or influencer threat</td>
+              <td class="px-4 py-3 font-semibold text-emerald-600">Yes</td>
+              <td class="px-4 py-3">Refund or Credit</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Agent error or wrong information given</td>
+              <td class="px-4 py-3 font-semibold text-emerald-600">Yes</td>
+              <td class="px-4 py-3">Refund or Credit</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Cancellation within standard policy</td>
+              <td class="px-4 py-3 font-semibold text-rose-600">No</td>
+              <td class="px-4 py-3">Standard Refund</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Practice Activity -->
+    <section class="bg-white rounded-3xl shadow-soft p-8 mb-6 border border-slate-200">
+      <h2 class="text-2xl font-bold mb-2">🎯 Practice Activity: Would You Escalate?</h2>
+      <p class="text-slate-600 mb-6">
+        Select your decision, then click <strong>Check Answer</strong> to reveal the correct response and typical resolution.
+      </p>
+
+      <div id="practice-container" class="space-y-6"></div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-brand-600 text-white rounded-3xl shadow-soft p-8">
+      <h2 class="text-2xl font-bold">🐺 Rule of Thumb</h2>
+      <p class="mt-3 text-slate-200 leading-7">
+        If the concern falls outside standard policy, involves legal, operational, or reputational risk, and requires manual review or higher-level approval, it should be escalated to Tier 3 Strategic Exception handling.
+      </p>
+    </section>
+  </div>
+  <script>
+    const scenarios = [
+      {
+        title: 'Scenario 1: Accessibility Concern',
+        prompt: 'A guest states that their ADA accommodation request was not properly handled and requests compensation for the inconvenience.',
+        correct: 'tier3',
+        decision: 'Escalate to Tier 3',
+        resolution: 'Refund or Credit',
+        options: ['Refund or Credit', 'Refund Required', 'Standard Refund']
+      },
+      {
+        title: 'Scenario 2: Reservation Rate Error',
+        prompt: 'A guest confirms that the website displayed the wrong promotional rate and they were overcharged.',
+        correct: 'tier3',
+        decision: 'Escalate to Tier 3',
+        resolution: 'Refund Required',
+        options: ['Refund Required', 'Refund or Credit', 'No Compensation']
+      },
+      {
+        title: 'Scenario 3: Viral Review Threat',
+        prompt: 'A guest says they will post a detailed negative review across multiple travel sites unless the issue is addressed.',
+        correct: 'tier3',
+        decision: 'Escalate to Tier 3',
+        resolution: 'Refund or Credit',
+        options: ['Refund or Credit', 'Refund Required', 'Standard Refund']
+      },
+      {
+        title: 'Scenario 4: Incorrect Policy Application',
+        prompt: 'A guest was denied a benefit that should have been applied according to company policy.',
+        correct: 'tier3',
+        decision: 'Escalate to Tier 3',
+        resolution: 'Refund or Credit',
+        options: ['Refund or Credit', 'Refund Required', 'No Compensation']
+      },
+      {
+        title: 'Scenario 5: Grace Period Cancellation',
+        prompt: 'A guest requests to cancel a reservation within the approved 24-hour grace period.',
+        correct: 'standard',
+        decision: 'Handle Through Standard Process',
+        resolution: 'Standard Refund',
+        options: ['Standard Refund', 'Refund or Credit', 'Refund Required']
+      }
+    ];
+
+    const container = document.getElementById('practice-container');
+
+    scenarios.forEach((scenario, index) => {
+      const card = document.createElement('div');
+      card.className = 'rounded-2xl border border-slate-200 bg-slate-50 p-6';
+
+      card.innerHTML = `
+        <h3 class="font-bold text-lg">${scenario.title}</h3>
+        <p class="mt-2 text-slate-700">${scenario.prompt}</p>
+
+        <div class="mt-4">
+          <p class="text-sm font-semibold text-slate-600 mb-2">1. Should this be escalated?</p>
+          <div class="flex flex-wrap gap-3">
+          <button onclick="selectAnswer(${index}, 'tier3')" id="tier3-${index}"
+            class="px-4 py-2 rounded-xl border border-brand-300 bg-white hover:bg-brand-50 transition">
+            Escalate to Tier 3
+          </button>
+          <button onclick="selectAnswer(${index}, 'standard')" id="standard-${index}"
+            class="px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 transition">
+            Handle Through Standard Process
+          </button>
+          <button onclick="checkAnswer(${index})"
+            class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition">
+            Check Answer
+          </button>
+                  </div>
+        </div>
+
+        <div class="mt-4">
+          <p class="text-sm font-semibold text-slate-600 mb-2">2. What is the most likely resolution?</p>
+          <select id="resolution-${index}" class="w-full md:w-80 px-4 py-2 rounded-xl border border-slate-300 bg-white">
+            <option value="">Select a resolution</option>
+            ${scenario.options.map(option => `<option value="${option}">${option}</option>`).join('')}
+          </select>
+        </div>
+
+        <div id="feedback-${index}" class="mt-4 hidden rounded-xl p-4"></div>
+      `;
+
+      container.appendChild(card);
+    });
+
+    const selectedAnswers = {};
+
+    function selectAnswer(index, answer) {
+      selectedAnswers[index] = answer;
+
+      ['tier3', 'standard'].forEach(option => {
+        const btn = document.getElementById(`${option}-${index}`);
+        btn.className = 'px-4 py-2 rounded-xl border bg-white transition';
+
+        if (option === 'tier3') {
+          btn.classList.add('border-brand-300', 'hover:bg-brand-50');
+        } else {
+          btn.classList.add('border-slate-300', 'hover:bg-slate-100');
+        }
+      });
+
+      const selectedBtn = document.getElementById(`${answer}-${index}`);
+      selectedBtn.classList.remove('bg-white');
+      selectedBtn.classList.add('bg-brand-600', 'text-white', 'border-brand-600');
+    }
+
+    function checkAnswer(index) {
+      const scenario = scenarios[index];
+      const selected = selectedAnswers[index];
+      const feedback = document.getElementById(`feedback-${index}`);
+
+      if (!selected || !document.getElementById(`resolution-${index}`).value) {
+        feedback.className = 'mt-4 rounded-xl p-4 bg-amber-50 border border-amber-200 text-amber-800';
+        feedback.innerHTML = 'Please select both an escalation decision and a resolution before checking.';
+        feedback.classList.remove('hidden');
+        return;
+      }
+
+      const selectedResolution = document.getElementById(`resolution-${index}`).value;
+      const isCorrect = selected === scenario.correct && selectedResolution === scenario.resolution;
+
+      if (isCorrect) {
+        feedback.className = 'mt-4 rounded-xl p-4 bg-emerald-50 border border-emerald-200 text-emerald-800';
+        feedback.innerHTML = `
+          <strong>✅ Correct!</strong><br>
+          <strong>Decision:</strong> ${scenario.decision}<br>
+          <strong>Typical Resolution:</strong> ${scenario.resolution}
+        `;
+      } else {
+        feedback.className = 'mt-4 rounded-xl p-4 bg-rose-50 border border-rose-200 text-rose-800';
+        feedback.innerHTML = `
+          <strong>❌ Not Quite.</strong><br>
+          <strong>Correct Decision:</strong> ${scenario.decision}<br>
+          <strong>Typical Resolution:</strong> ${scenario.resolution}
+        `;
+      }
+
+      feedback.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
